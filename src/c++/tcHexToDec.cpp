@@ -22,15 +22,14 @@ void tcHexToDec::slot_btnConvert_clicked()
     // Check if separator has been specified
     if (ui->leSeparator->text().isEmpty())
     {
-        QMessageBox::information(this, "Missing separator", "Enter a separator ma.. What you doing ma..\n"
-                                 "If no separator, just put a space in separator box", QMessageBox::Ok);
+        QMessageBox::information(this, "Missing separator", "If no separator, just put a space in separator box", QMessageBox::Ok);
         return;
     }
 
     // Check if hex stream has been given
     if (ui->teHexStream->toPlainText().isEmpty())
     {
-        QMessageBox::warning(this, "Missing hex stream", "Wat to convert if u no enter data!", QMessageBox::Ok);
+        QMessageBox::warning(this, "Missing hex stream", "Enter some data first", QMessageBox::Ok);
         return;
     }
 
@@ -57,7 +56,7 @@ void tcHexToDec::slot_btnShowTable_clicked()
     // Check if separator has been specified
     if (ui->leSeparator->text().isEmpty())
     {
-        QMessageBox::information(this, "Missing separator", "Enter a separator ma.. What you doing ma..\n"
+        QMessageBox::information(this, "Missing separator",
                                  "If no separator, just put a space in separator box", QMessageBox::Ok);
         return;
     }
@@ -65,7 +64,7 @@ void tcHexToDec::slot_btnShowTable_clicked()
     // Check if hex stream has been given
     if (ui->teHexStream->toPlainText().isEmpty())
     {
-        QMessageBox::warning(this, "Missing hex stream", "Wat to convert if u no enter data!", QMessageBox::Ok);
+        QMessageBox::warning(this, "Missing hex stream", "Enter some data first", QMessageBox::Ok);
         return;
     }
 
